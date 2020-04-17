@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>修改密码页面</title>
+<link rel="stylesheet" type="text/css"
+	href="../../layui/css/layui.css" />
+<link rel="stylesheet" type="text/css"
+	href="../../css/user/psd.css" />
+<script type="text/javascript"
+	src="../../layui/layui.all.js"></script>
+<script type="text/javascript"
+	src="../../js/user/psd.js"></script>
+</head>
+<body>
+<div style="margin-left: 250px;margin-top: 150px;">
+<form class="layui-form" action="http://localhost:8080/bike/UserServlet" method="post">
+<input type="hidden" name="method" value="updatePassword" />
+  <div class="layui-form-item">
+    <label class="layui-form-label">原密码</label>
+    <div class="layui-input-inline">
+      <input id="loginpass" type="password" name="oldloginpass" required lay-verify="required" placeholder="请输入旧密码" autocomplete="off" class="layui-input">
+    </div>
+    <div class="layui-form-mid layui-word-aux"></div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">新密码</label>
+    <div class="layui-input-inline">
+      <input id="newloginpass" type="password" name="newloginpass" required lay-verify="required" placeholder="请输入新密码" autocomplete="off" class="layui-input">
+    </div>
+    <div class="layui-form-mid layui-word-aux"></div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">确认密码</label>
+    <div class="layui-input-inline">
+      <input id="reloginpass" type="password" name="reloginpass" required lay-verify="required" placeholder="请输入确认密码" autocomplete="off" class="layui-input">
+    </div>
+    <div class="layui-form-mid layui-word-aux"></div>
+  </div>
+  
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+</div>
+ 
+
+</body>
+</html>
