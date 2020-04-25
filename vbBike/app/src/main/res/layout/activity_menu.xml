@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#00BCD4"
+    tools:context=".controller.activity.MenuActivity">
+
+    <Button
+        android:id="@+id/personMessageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/perxon"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:text="菜鸟租车"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/message"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
