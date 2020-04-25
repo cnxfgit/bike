@@ -1,0 +1,4 @@
+一个仿共享单车的毕业设计
+bike是eclipse开发
+vbbike是android stu开发
+数据库用的是mysql
